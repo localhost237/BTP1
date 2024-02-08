@@ -1,0 +1,75 @@
+1-	Reformuler besoin clients
+	Une interface plus attrayante pour le site d’espace élève 3il en respectant les bonnes pratiques UX /UI design pour une expérience utilisateur améliorée 
+	Mettre sur pied un système d’authentification unifié basé sur Microsoft Open ID tout en garantissant la sécurité des données durant la migration du système existant pour le nouveau. Qui veut dire que pour chaque élève ou personnel il puisse se connecter avec les mêmes comptes sur toutes les plateformes
+	Créer des comptes spécifiques avec un système d’authentification distinct pour les répondant financiers et les maitres d’apprentissage.
+	Sélection d’un CMS convivial pour implémenté des interfaces intuitives pour une consultation des informations plus pertinentes pour les élèves avec une restriction d’accès aux PV des élèves concernés
+	Mettre en place un système de publication convivial avec navigation facile pour le personnel
+	Intégration d'un système d'upload de documents (PDF) simplifié pour encourager la publication directe sur l'espace élèves.
+	Mettre sur pied une interface convivial pour le personnel de l’école leurs facilitant ainsi la mise à jour du contenu.
+	L’hébergement du site doit rester externe pour des raisons de sécurité
+	L’utilisation du SSH/SFTP pour l’upload des fichiers pour garantir la confidentialité des informations.
+	Restreindre la plateforme administrative du système pour des personnes uniquement connecter sur le réseau intranet 
+
+3-	Cahier des charges
+3.1 Contexte
+Le site de 3iL est une plateforme mise en place depuis 2016 dédier aux élèves, répondant financiers et maitre d’apprentissage. Il constitue l’affichage générale de l’école qui permet de consulter un ensemble de documents et fichiers pour la scolarité, les PVs, les bulletins de notes, compétences et relevés d’absences, des liens divers (dont l’emploi du temps).
+3.2 Problématique
+Le site ne répond plus aux attentes de l’écoles sur différents points comme notamment :
+-	L’esthétique du site qui ne correspond plus aux canons actuels 
+-	L’authentification INE/date de naissance n’est pas modifiable 
+-	Le CMS utilisé n’est pas suffisamment user-friendly pour le personnel administratif de l’école chargé de mettre à jour le contenu, notamment pour tout ce qui est upload de documents (PDF). Cela incite à faire des diffusions par mail au lieu d’une publication sur l’espace élèves. Ce qui pose le problème des versions successives. 
+-	La présentation des PV de jury n’est pas restreinte à ce qui concerne directement l’élève 
+-	Un maître d’apprentissage ayant plusieurs élèves de l’école doit se connecter autant de fois qu’il a d’alternants
+3.2 Objectif Global
+Mettre sur pied un site qui va optimiser l'utilisation de l'espace élève, tout en assurant une esthétique moderne, une sécurité renforcée, et une expérience utilisateur améliorée pour toutes les parties prenantes, y compris le personnel administratif, les élèves, et les maîtres d'apprentissage pour l’école 3iL.
+3. 3 Contraintes 
+3. 3.1 Normes de Sécurité :
+-	Respect strict des normes de sécurité en vigueur pour protéger les données sensibles des élèves, répondants financiers et maitre d’apprentissage.
+-	Utilisation de protocoles sécurisés pour toutes les communications, notamment lors des mises à jour.
+3.3.2 Migration des Données :
+- Développement d'un plan de migration pour transférer les données des élèves en cours et des anciens élèves.
+- Minimisation des interruptions de service pendant la période de transition.
+3.3.3 Lancement pour la Rentrée en Septembre 2024 :
+- Planification rigoureuse pour assurer le déploiement du nouveau site avant la rentrée de septembre 2024.
+- Coordination avec toutes les parties prenantes pour une transition fluide.
+
+
+Cahier de Recette - Projet Espace Élève 3iL
+Informations générales
+Projet : Amélioration de l'espace élève
+Client : 3iL
+Date : [Date]
+Objectif
+Ce cahier de recette vise à valider que la solution développée répond aux besoins et aux spécifications définies dans le cahier des charges. Il comprend une série de tests à effectuer pour chaque fonctionnalité du système.
+Tests
+1. Esthétique du site
+ Vérifier que le nouveau design correspond aux standards actuels en matière d'ergonomie et de graphisme.
+ S'assurer que l'interface utilisateur est attrayante et intuitive pour les différents types d'utilisateurs.
+2. Authentification
+ Tester l'authentification basée sur Microsoft OpenID pour s'assurer de son bon fonctionnement.
+ Vérifier la possibilité de se connecter en utilisant des comptes spécifiques avec email/mot de passe.
+3. Gestion des comptes avec droits de consultation
+ Vérifier la possibilité d'associer des comptes ayant droit de consultation à un élève.
+ S'assurer que seuls les élèves concernés ont accès aux informations qui les concernent.
+4. Présentation adaptée aux utilisateurs
+ Vérifier que la présentation des informations est adaptée à chaque type d'utilisateur (élève, répondant financier, maître d'apprentissage).
+ S'assurer que seuls les élèves concernés ont accès aux informations qui les concernent.
+5. Facilité d'utilisation pour les personnels de l'école
+ Tester le système de publication pour s'assurer qu'il est convivial et intuitif pour les personnels administratifs.
+ Vérifier la possibilité de mettre à jour le contenu, notamment les documents (PDF), de manière efficace et sans difficultés techniques.
+6. Sécurité du site
+ Vérifier que le site est sécurisé et que les données des utilisateurs sont protégées.
+ S'assurer que seuls les adresses IP de l'école peuvent accéder à la partie administrative du site.
+7. Migration de l'existant
+ Planifier et réaliser la migration de l'existant vers le nouveau système.
+ Tester la migration pour s'assurer de l'intégrité des données et de la continuité du service.
+
+8. Tests de charge et de performance
+ Effectuer des tests de charge pour évaluer la capacité du système à gérer un grand nombre d'utilisateurs simultanément.
+ Tester la performance du site pour garantir des temps de réponse acceptables.
+9. Formation des utilisateurs
+ Planifier et réaliser des sessions de formation pour les utilisateurs finaux.
+ S'assurer que les utilisateurs sont à l'aise avec les fonctionnalités offertes par la solution.
+10. Documentation et support
+ Fournir une documentation complète et claire sur l'utilisation du site et ses fonctionnalités.
+ Mettre en place un support technique réactif pour répondre aux questions et aux problèmes des utilisateurs.
